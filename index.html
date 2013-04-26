@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>{{ Mailstache }}: Email Templating</title>
+        <meta name="description" content="Mailstache: An email templating tool">
+        <meta name="viewport" content="width=device-width">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+
+    </head>
+    <body>
+
+        <div class="content">  
+            <h1>Mailstache <span id="logo">}</span> </h1>     
+            <h2>An email templating tool. <a id="reset" href="javascript:void(0)">See Example</a></h2> 
+            <div class="topinput"> <span>To: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><input placeholder="", class="textboxemail", id="tmplemail"></input></div>
+
+            <div class="topinput" > <span> Subject: </span> <input placeholder="", class="textboxsubject", id="tmplsubject"> </input> </div>
+
+            <span class="tmpl">
+                <!--<span syle="position:absolute;" class="title">Mustache Template </span> -->
+                <textarea placeholder="Mustache Template for Body", class="textbox", id="tmpl"></textarea> </span>
+            <span class="csv"> 
+                <!--<span syle="position:absolute;" class="title">comma sperated value</span>--> 
+                <textarea  placeholder="Comma Seperated Values", class="textbox", id="csv"></textarea> </span>
+            <br>
+            <br>
+            <br>
+            <input id="parse" type="button" value="Create Emails"></input> &nbsp;<span class="next">< Now Click Here!</span> <span class="count" id="renderCount"></span>
+            <br><hr>
+            <a id="result"></a>
+        <div class="help">
+            <p><b>Instructions:</b></p>
+            <ol>
+            <li>Export contacts as a <a href="http://en.wikipedia.org/wiki/Comma-separated_values">comma separated values</a> file from a <a href="https://docs.google.com/spreadsheet/ccc?key=0AlhPliyyWiN1dE1UQ2FlRDdWaXNURDVHb2JPZUVVREE", target="_blank">spreadsheet</a>. Paste the contacts into the right box.</li>
+            <li>Use <a href="http://mustache.github.io/">Mustache Templates</a> for your email template. Paste your template into the left box.</li>
+            <li> Push "Create Emails", and send your mail with the provided links.</li>
+        </ol>
+        </div>
+        <footer> Brought to you by <a href="http://sfdevlabs.com/">sfdevlabs<a>.</footer>
+        </div>
+
+
+
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-2.0.0.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/vendor/mustache.js"></script>
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script type="text/javascript">var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-40052773-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();</script>
+    </body>
+</html>
