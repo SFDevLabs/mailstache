@@ -1,7 +1,8 @@
 # [Mailstache](http://sfdevlabs.com/mailstash)
 
 ##Demo
-sfdevlabs.com/mailstache
+
+[http://sfdevlabs.com/mailstache] (http://sfdevlabs.com/mailstache)
 
 ## Quick start
 
@@ -11,11 +12,7 @@ sfdevlabs.com/mailstache
 * Open index.html in the root directory.
 
 
-## Features
-* Make Mail Templating Easy and quick.
-
-
 
 ## Contributing
 
-https://github.com/jeffj
+[https://github.com/jeffj] (JeffJ)
