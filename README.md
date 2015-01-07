@@ -2,7 +2,7 @@
 
 ##Demo
 
-[http://sfdevlabs.com/mailstache] (http://sfdevlabs.com/mailstache)
+[http://mailstache.sfdevlabs.com/] (http://mailstache.sfdevlabs.com)
 
 ## Quick start
 
